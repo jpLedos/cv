@@ -3,6 +3,7 @@ const dataSkills = [
     id: 1,
     title: "Informatique",
     items : [
+      "PHP / Symfony",
       "javascript / React / NextJS",
       "HTML / CSS",
       "Photoshop / Lightroom / XD",
