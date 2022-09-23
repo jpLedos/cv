@@ -1,0 +1,29 @@
+.skills {
+  background : var(  --skill-bg-color);
+  color : var(  --skill-color);
+  padding : 25px;
+}
+
+.skill {
+  margin-bottom : 25px;
+}
+
+.skill-title{
+  font-size: 24px;
+  text-transform: uppercase;
+  border-top: 2px solid var(  --skill-color);
+  border-bottom: 2px solid var(  --skill-color);
+  padding: 4px 0;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.skill ul {
+  margin-left: 5%;
+  font-size: 16px;
+}
+
+.skill li {
+margin-bottom: 5px;
+
+}

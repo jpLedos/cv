@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+
+  /* colors */
+  --body-bg-color: #464646;
+  --header-bg-color : #c7c8c7e5;
+  --skill-bg-color: linear-gradient(130deg, gray, black);
+  --text-color: #37393a;
+  --title-color: #403f4f;
+  --period-color: #1f94c2b2;
+  --dark-body-bg-color: #242424;
+  --dark-sidebar-bg-color: #171717;
+  --dark-text-color: #d8d8d8;
+  --dark-title-color: #ffffff;
+  --dark-date-color: #e6ef71;
+
+  --skill-color : #dfdcdc;
+  --experience-bg-color : #dfdcdc;
+  
+  --icon-color:var(--text-color);
+  --circle-color: #AAA;
+  --circle-color-plain: #555;  
+  --dark-icon-color:var(--dark-text-color);
+  --dark-circle-color: rgb(108, 108, 108);
+  --dark-circle-color-plain: rgb(238, 238, 238);
+
+
+  /* Fonts */
+  --body-font: "Poppins", "Sans-serif";
+  --h1-font-size: 1.7rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.4rem;
+  --h4-font-size: 1rem;
+
+  /* Helpers */
+  --spacing-1: .4rem;
+  --spacing-2: .8rem;
+  --spacing-3: 1.2rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+body {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: var(--body-bg-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.dark a {
+  color: var(--dark-text-color);
+}
+
+
+h1, h2, h3 {
+  margin-bottom: var(--spacing-1);
+  font-weight: 400;    
+  color: var(--title-color);
+}
+
+.dark h1, .dark h2, .dark h3 {
+  color: var(--dark-title-color);
+}
+
+h1 {
+  font-size:var(--h1-font-size);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;  
+
+  font-size: var(--h2-font-size);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  font-weight: bold;
+  width: fit-content;
+  border-bottom: 2px solid black;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+/* petit ecran*/
+@media screen and (min-width:768px) {
+  .skills-experiences-container {
+    display: grid;
+    grid-template-columns: 1fr  3fr;
   }
-  to {
-    transform: rotate(360deg);
+  .experiences {
+    padding: 25px 15px;
   }
 }
+
+/* grand ecran*/
+@media screen and (max-width:768px) {
+  .profil-detail  p {
+    padding :0 20px  8px 20px;
+  }
+}
+
+

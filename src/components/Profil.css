@@ -1,0 +1,105 @@
+
+.header {
+  background: var(--header-bg-color);
+  display: flex;
+  padding-right : 15px;
+  align-items: center;
+}
+
+.profil-left {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    min-width: 350px;
+    display : flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.profil-title {
+  color: #4c4c59;
+  margin: 0 25px ;
+}
+.user__avatar {
+  border-radius: 5%;
+  width: 100px;
+  height : 100%;
+  filter: grayscale(80%);
+  box-shadow:  
+    6px 6px 12px rgba(51, 51, 51, 0.451),
+   -4px -2px 12px rgba(51, 51, 51, 0.451);
+  margin-bottom: 5px;
+  margin: 8px;
+}
+
+
+.user-infos {
+  text-align: left;
+  padding: var(--spacing-3) 0 var(--spacing-1) 0;
+  margin: 0 25px ;
+}
+.user-info {
+  display: flex;
+  margin-bottom: var(--spacing-1);
+}
+.user-info svg {
+  color: var(--icon-color);
+  margin-right: 1rem;
+}
+.dark .user-info svg {
+  color: var(--dark-icon-color);
+}
+
+.profil-detail  {
+    background:var(--header-bg-color);
+    position: relative;
+
+}
+
+.profil-detail  h3 {
+    padding : 15px 25px 8px;
+}
+
+.profil-detail  p {
+    padding :0 40px  8px 40px;
+}
+
+/* grand ecran*/
+@media screen and (max-width:768px) {
+  .profil-detail  p {
+    padding :0 20px  8px 20px;
+  } 
+}
+
+
+.profil-description:last-child {
+  padding-bottom:  25px;
+}
+
+
+.profil-detail::before{
+    position:absolute;
+    content: "";
+    top:-5px;
+    height: 22px;
+    width: 100%;
+    background: #dedeb9;
+    clip-path: polygon(0% 20%, 80% 10%, 60% 0%, 100% 50%, 60% 100%, 80% 90%, 0% 80%);
+}
+.profil-detail::after{
+    position:absolute;
+    content: "";
+    bottom:0;
+    height: 12px;
+    width: 100%;
+    background: #dedeb9;
+    padding-top: 0px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.profil-description {
+    margin-top: 12px;
+    text-align: justify;
+    font-size: 20px;
+    line-height:24px
+}
