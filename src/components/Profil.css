@@ -4,6 +4,7 @@
   display: flex;
   padding-right : 15px;
   align-items: center;
+  border-radius: 5px;
 }
 
 .profil-left {
@@ -58,14 +59,10 @@
   color: var(--icon-color);
   margin-right: 1rem;
 }
-.dark .user-info svg {
-  color: var(--dark-icon-color);
-}
 
 .profil-detail  {
     background:var(--header-bg-color);
     position: relative;
-
 }
 
 .profil-detail  h3 {
@@ -76,7 +73,7 @@
     padding :0 40px  8px 40px;
 }
 
-/* grand ecran*/
+/* petit ecran*/
 @media screen and (max-width:768px) {
   .profil-detail  p {
     padding :0 20px  8px 20px;
@@ -114,4 +111,35 @@
     text-align: justify;
     font-size: 20px;
     line-height:24px
+}
+
+/* mise en page pourn pdf  */
+.cv-pdf .profil-description {
+  margin-top: 12px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 16px
+}
+
+.cv-pdf .profil-detail  h3 {
+  padding : 25px 25px 12px;
+  font-size: 18px;
+}
+
+.cv-pdf .profil-description:last-child {
+  padding-bottom: 12px;
+}
+
+.cv-pdf .user__avatar {
+  border-radius: 5%;
+  width: 50px;
+}
+
+.cv-pdf .profil-detail::after{
+ display: none;
+}
+
+.cv-pdf .header,
+.cv-pdf .profil-detail {
+  background: var(--header-pdf-bg-color);
 }

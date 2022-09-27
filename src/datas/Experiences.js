@@ -2,7 +2,7 @@ export const dataExperiences = [
   {
     id : 0,
     title : "Formation Graduate Développeur Web Full Stack",
-    period : "AVRIL. 2001 – JUILLET 2022",
+    period : "AVRIL. 2021 – SEPTEMBRE 2022",
     missions : [
       "Maquetter une application",
       "Développer une interface Web dynamique avec gestion de contenus",

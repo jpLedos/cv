@@ -24,6 +24,12 @@
   --skill-color : #dfdcdc;
   --experience-bg-color : #dfdcdc;
   
+  --header-pdf-bg-color: #ffffffe1;
+  --experience-pdf-bg-color : #dfdcdc;
+  --skill-pdf-bg-color: #d9e5e5ee;
+  --skill-pdf-color: #2e2f2f;
+
+
   --icon-color:var(--text-color);
   --circle-color: #AAA;
   --circle-color-plain: #555;  
@@ -47,11 +53,53 @@
   --spacing-5: 2rem;
 }
 
+/* button {
+  background: none;
+  border:none;
+  outline: none;
+  cursor: pointer;
+} */
+
+.pdf-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left :50%;
+  transform: translate(-50%,-40px);
+  border-radius : 5px;
+  padding: 4px 8px;
+  cursor:pointer;
+  font-weight: 300;
+  animation : 0.6s ease-out 0.3s  pdf-icon;
+
+}
+
+
+@keyframes pdf-icon {
+  from {
+    transform: translate(-50%,-100px);
+  }
+  to{
+    transform: translate(-50%,-40px);
+  }
+}
+
+.pdf-icon:hover{
+  background-color: #fff;
+  font-weight: 600;
+}
+
 
 body {
+
   max-width: 1050px;
   margin: 0 auto;
   background: var(--body-bg-color);
+}
+
+.app {
+  margin: 50px 0px;
 }
 
 a {
@@ -70,9 +118,6 @@ h1, h2, h3 {
   color: var(--title-color);
 }
 
-.dark h1, .dark h2, .dark h3 {
-  color: var(--dark-title-color);
-}
 
 h1 {
   font-size:var(--h1-font-size);
@@ -97,14 +142,13 @@ h3 {
   font-weight: bold;
   width: fit-content;
   border-bottom: 2px solid black;
-
 }
 
 h4 {
   font-size: var(--h4-font-size);
 }
 
-/* petit ecran*/
+/* grand ecran*/
 @media screen and (min-width:768px) {
   .skills-experiences-container {
     display: grid;
@@ -113,13 +157,45 @@ h4 {
   .experiences {
     padding: 25px 15px;
   }
+  .app {
+    margin: 50px 24px;
+  }
+  
 }
 
-/* grand ecran*/
+/* petit ecran*/
 @media screen and (max-width:768px) {
   .profil-detail  p {
     padding :0 20px  8px 20px;
   }
+}
+
+
+
+/* mise en page PDF */
+
+#cv-pdf.cv-pdf {
+  width: 210mm;
+  height : 297mm;
+  
+}
+
+.cv-pdf{
+  color: #000000;
+}
+.cv-pdf ul {
+  margin:0;
+  padding:0;
+ 
+}
+
+.cv-pdf {
+  font-size:12px;
+}
+
+.cv-pdf  .skills-experiences-container {
+  display: grid;
+  grid-template-columns: 1fr  3fr;
 }
 
 

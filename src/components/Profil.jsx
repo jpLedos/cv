@@ -4,6 +4,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
 
+
 function Profil() {
   return (
     <>
@@ -30,6 +31,7 @@ function Profil() {
             <MailIcon />{" "}
             <a href="mailto:jpledos@gmail.com">jpledos@gmail.com</a>
           </p>
+
         </div>
       </div>
         </div>

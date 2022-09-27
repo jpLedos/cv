@@ -25,5 +25,21 @@
 
 .skill li {
 margin-bottom: 5px;
+}
 
+/* mise en page pourn pdf  */
+.cv-pdf .skills {
+  background : var(  --skill-pdf-bg-color);
+  color : var(  --skill-pdf-color);
+  padding : 25px;
+}
+
+.cv-pdf  .skill-title{
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.cv-pdf .skill ul {
+  margin-left: 5%;
+  font-size: 14px;
 }
