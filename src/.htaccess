@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://ledos-dev.com/ [R=301,L]

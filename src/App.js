@@ -63,7 +63,7 @@ function App() {
   return (
     <>
       <div className="app">
-        <div id={"cv-pdf"}>
+        <div id={"cv-pdf"} className="">
           <Button
             className="pdf-icon"
             variant="success"
