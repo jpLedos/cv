@@ -2,7 +2,7 @@
   "name": "cv2022",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ledos-dev.com/",
+  "homepage": "https://jpledos.github.io/cv-react/",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",

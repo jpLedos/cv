@@ -1,5 +1,5 @@
 # CV en ligne avec React (avec export PDF)
-[Le lien pour aller voir le rendu du CV en ligne ](https://jpledos.github.io/cv/)
+[Le lien pour aller voir le rendu du CV en ligne ](https://github.com/jpLedos/cv-react.git)
 
 ## Environment
 
